@@ -16,4 +16,9 @@ public abstract class Card implements TransactionMode {
 		this.financialInstitution = financialInstitution;
 	}
 	
+	@Override
+	public TransactionModeType getTransactionMode() {
+		return TransactionModeType.CARD;
+	}
+	
 }

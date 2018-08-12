@@ -8,6 +8,8 @@ public abstract class Transaction {
 	
 	private String transactionDate;
 	
+	public abstract TransactionType getTransactionType();
+	
 	public BigDecimal getAmount() {
 		return amount;
 	}
@@ -28,8 +30,12 @@ public abstract class Transaction {
 
 	public abstract void setTransactionMode(TransactionMode transactionMode);
 
-	public abstract TransactionMetadata getTransactionMetadata();
+	public abstract TransactionDetails getTransactionDetails();
 
-	public abstract void setTransactionMetadata(TransactionMetadata transactionMetadata);
+	public abstract void setTransactionDetails(TransactionDetails transactionDetails);
 	
+	public abstract TransactionInitiator getTransactionInitiator();
+	
+	public abstract void setTransactionInitiator(TransactionInitiator transactionInitiator);
+
 }

@@ -1,7 +1,7 @@
 package com.rolex.projects.accountsmanager.accountsmanagerservice.model;
 
-public interface TransactionCategory {
+public interface TransactionInitiator {
 	
-	//TODO
+	String getInitiatorType();
 
 }

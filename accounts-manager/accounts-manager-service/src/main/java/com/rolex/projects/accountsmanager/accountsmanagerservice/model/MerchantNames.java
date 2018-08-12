@@ -1,6 +1,6 @@
 package com.rolex.projects.accountsmanager.accountsmanagerservice.model;
 
-public enum Vendor {
+public enum MerchantNames {
 	
 	AMAZON("Amazon"),
 	
@@ -38,12 +38,13 @@ public enum Vendor {
 	
 	private String name;
 
-	private Vendor(String name) {
+	private MerchantNames(String name) {
 		this.name = name;
 	}
 
-	public String getName() {
-		return name;
+	@Override
+	public String toString() {
+		return this.name;
 	}
 	
 }

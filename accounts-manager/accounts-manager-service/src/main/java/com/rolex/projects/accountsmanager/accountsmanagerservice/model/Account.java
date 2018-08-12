@@ -26,4 +26,9 @@ public abstract class Account implements TransactionMode {
 		this.financialInstitution = financialInstitution;
 	}
 	
+	@Override
+	public TransactionModeType getTransactionMode() {
+		return TransactionModeType.ACCOUNT;
+	}
+
 }

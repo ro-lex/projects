@@ -1,7 +1,8 @@
 package com.rolex.projects.accountsmanager.accountsmanagerservice.model;
 
-public interface TransactionCategory {
+public enum TransactionType {
 	
-	//TODO
+	CREDIT,
+	DEBIT
 
 }
